@@ -8,13 +8,13 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.AllArgsConstructor;
 
-@Entity // Diz que isso é algo que pode ser salvo no caderninho
-@Data // O Lombok ajuda a criar métodos comuns (get, set)
-@NoArgsConstructor // Construtor vazio
-@AllArgsConstructor // Construtor com todos os campos
+@Entity 
+@Data 
+@NoArgsConstructor 
+@AllArgsConstructor 
 public class Produto {
-    @Id // Diz que este é o ID único do produto
-    @GeneratedValue(strategy = GenerationType.IDENTITY) // O banco gera o ID automaticamente
+    @Id 
+    @GeneratedValue(strategy = GenerationType.IDENTITY) 
     private Long id;
     private String nome;
     private double preco;
